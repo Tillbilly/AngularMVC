@@ -9,4 +9,13 @@ This is a newb skill up project demonstrating ASP.Net MVC, Web API 2, Angular js
 
 /api/Sfia         - Baseline SFIA data
 
-> What does this do folks?
+------------------------------------------
+
+
+Web Publish failing - complaining about chunked encoding - turn it on for IIS 8
+
+cd %windir%\system32\inetsrv
+
+appcmd set config /section:asp /enableChunkedEncoding:True
+
+
