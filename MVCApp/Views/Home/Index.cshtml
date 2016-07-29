@@ -3,11 +3,13 @@
 }
 
 <div class="jumbotron">
+    <p></p>
     <h1>Ben's MVC Web API2 Angular demo/ </h1>
     <p class="lead"></p>
-    <p><a href="/api/sfiaref" class="btn btn-primary btn-lg">SFIA Reference Data</a>
+    <p><a href="@Url.HttpRouteUrl("DefaultApi", new { controller="SfiaRef" })" class="btn btn-primary btn-lg">SFIA Reference Data</a>
     </p>
-    <p><a href="/Home/Angular" class="btn btn-primary btn-lg">Angular Hello World</a></p>
+    <p>@Html.ActionLink("Angular Hello World", "Angular", "Home", null, new {@class = "btn btn-primary btn-lg"})</p>
+    
 </div>
 
 <div class="row">
